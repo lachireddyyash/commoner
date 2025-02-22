@@ -1,7 +1,7 @@
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Brain, Code, Database, LineChart, Robot, Server } from "lucide-react";
+import { Brain, Code, Database, LineChart, Bot, Server } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -16,7 +16,7 @@ const Services = () => {
       description: "Transform your raw data into actionable insights with our advanced analytics solutions."
     },
     {
-      icon: <Robot className="w-12 h-12 text-[#9b87f5]" />,
+      icon: <Bot className="w-12 h-12 text-[#9b87f5]" />,
       title: "AI Automation",
       description: "Streamline your operations with intelligent automation powered by AI."
     },
