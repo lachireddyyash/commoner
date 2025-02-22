@@ -34,24 +34,24 @@ const Index = () => {
               className="inline-flex items-center gap-2 bg-[#9b87f5] text-white px-8 py-6 rounded-lg font-medium hover:bg-[#7E69AB] transition-colors mb-12 text-lg"
             >
               <Bot className="w-5 h-5" />
-              Get Started
+              Contact Us
               <ArrowRight className="w-5 h-5" />
             </Button>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-20">
               <div className="glass p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
                 <Brain className="w-8 h-8 mx-auto mb-4 text-[#9b87f5]" />
-                <h3 className="font-medium mb-2">Machine Learning</h3>
+                <h3 className="font-medium mb-2">Custom Chatbots</h3>
                 <p className="text-sm text-gray-600">Custom ML models for your needs</p>
               </div>
               <div className="glass p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
                 <Database className="w-8 h-8 mx-auto mb-4 text-[#9b87f5]" />
-                <h3 className="font-medium mb-2">Data Analytics</h3>
+                <h3 className="font-medium mb-2">Web Development</h3>
                 <p className="text-sm text-gray-600">Turn data into insights</p>
               </div>
               <div className="glass p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
                 <Code className="w-8 h-8 mx-auto mb-4 text-[#9b87f5]" />
-                <h3 className="font-medium mb-2">AI Integration</h3>
+                <h3 className="font-medium mb-2">AI Automation</h3>
                 <p className="text-sm text-gray-600">Seamless AI implementation</p>
               </div>
             </div>
