@@ -7,25 +7,11 @@ import { Button } from "@/components/ui/button";
 const Blog = () => {
   const posts = [
     {
-      title: "The Future of AI in Business",
-      excerpt: "Explore how artificial intelligence is reshaping the business landscape and what it means for your organization.",
-      date: "2024-03-15",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
-      category: "AI Trends"
-    },
-    {
-      title: "Machine Learning Best Practices",
-      excerpt: "Learn about the latest best practices in implementing machine learning solutions for your business.",
+      title: "Coming Soon",
+      excerpt: "We're working on our blog!",
       date: "2024-03-10",
       image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
-      category: "Machine Learning"
-    },
-    {
-      title: "Data Analytics Success Stories",
-      excerpt: "Real-world examples of how data analytics has transformed businesses across different industries.",
-      date: "2024-03-05",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
-      category: "Case Studies"
+      category: "N/A"
     }
   ];
 
