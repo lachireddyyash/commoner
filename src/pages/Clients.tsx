@@ -5,34 +5,9 @@ import Footer from "../components/Footer";
 const Clients = () => {
   const clients = [
     {
-      name: "TechCorp Solutions",
-      logo: "TC",
-      testimonial: "The AI solutions provided have revolutionized our data processing capabilities."
-    },
-    {
-      name: "Global Innovations",
-      logo: "GI",
-      testimonial: "Implementation of ML models has increased our efficiency by 200%."
-    },
-    {
-      name: "Future Systems",
-      logo: "FS",
-      testimonial: "Outstanding results in predictive maintenance and automation."
-    },
-    {
-      name: "DataTech Industries",
-      logo: "DT",
-      testimonial: "The custom AI solutions have transformed our business operations."
-    },
-    {
-      name: "Smart Solutions Inc",
-      logo: "SS",
-      testimonial: "Exceptional expertise in AI integration and implementation."
-    },
-    {
-      name: "Innovation Labs",
-      logo: "IL",
-      testimonial: "Their AI consulting services have been invaluable to our growth."
+      name: "Coming Soon",
+      logo: "N/A",
+      testimonial: "We haven't had any clients yet."
     }
   ];
 
