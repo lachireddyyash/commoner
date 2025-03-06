@@ -7,28 +7,28 @@ const Services = () => {
   const services = [
     {
       icon: <Brain className="w-12 h-12 text-[#9b87f5]" />,
-      title: "Machine Learning Solutions",
-      description: "Custom ML models tailored to your business needs, from prediction to classification."
+      title: "Custom Chatbots",
+      description: "We develop intelligent chatbots tailored to your business needs, enhancing customer service, automating responses, and improving user engagement."
     },
     {
       icon: <Database className="w-12 h-12 text-[#9b87f5]" />,
-      title: "Data Analytics",
-      description: "Transform your raw data into actionable insights with our advanced analytics solutions."
+      title: "Logo Creation",
+      description: "Our AI-driven design tools craft unique, high-quality logos that represent your brand’s identity professionally and effectively."
     },
     {
       icon: <Bot className="w-12 h-12 text-[#9b87f5]" />,
       title: "AI Automation",
-      description: "Streamline your operations with intelligent automation powered by AI."
+      description: "Automate repetitive tasks with AI-powered workflows, boosting efficiency and reducing operational costs."
     },
     {
       icon: <Code className="w-12 h-12 text-[#9b87f5]" />,
-      title: "AI Integration",
-      description: "Seamlessly integrate AI capabilities into your existing systems and workflows."
+      title: "AI-Powered Website Generation",
+      description: "Get a fully functional, professionally designed website generated using AI, saving time and effort while ensuring a sleek, modern look."
     },
     {
       icon: <LineChart className="w-12 h-12 text-[#9b87f5]" />,
-      title: "Predictive Analytics",
-      description: "Make data-driven decisions with our predictive modeling solutions."
+      title: "Image Generation",
+      description: "Our AI image generation service produces high-quality graphics and illustrations tailored to your business needs."
     },
     {
       icon: <Server className="w-12 h-12 text-[#9b87f5]" />,
