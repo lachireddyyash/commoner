@@ -7,16 +7,22 @@ import { Button } from "@/components/ui/button";
 const Examples = () => {
   const examples = [
     {
-      title: "Chatbots",
-      description: "AI-powered systems that answer questions about your busines so you don't have to.",
+      title: "AI Customer Service Chatbot",
+      description: "Developed an intelligent chatbot for a retail company that reduced support tickets by 45% and improved customer satisfaction scores by 23%.",
+      image: "https://images.unsplash.com/photo-1596443686812-2f45229eebc3?auto=format&fit=crop&w=800&q=80",
+      tags: ["Natural Language Processing", "Machine Learning", "Customer Support"]
     },
     {
-      title: "Customer Sentiment Analysis",
-      description: "Natural Language Processing solution that analyzes customer feedback across multiple channels.",
+      title: "Predictive Analytics Dashboard",
+      description: "Created a real-time analytics platform that helped a financial services firm identify market trends with 87% accuracy, leading to 12% revenue growth.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+      tags: ["Data Science", "Predictive Modeling", "Financial Services"]
     },
     {
-      title: "Document Processing",
-      description: "AI system that extracts and processes information from documents with 99% accuracy.",
+      title: "Automated Document Processing",
+      description: "Built an AI system that extracts and processes information from legal documents with 99.2% accuracy, saving 1,200+ labor hours monthly.",
+      image: "https://images.unsplash.com/photo-1568857156743-346bd3572326?auto=format&fit=crop&w=800&q=80",
+      tags: ["Computer Vision", "OCR", "Legal Tech"]
     }
   ];
 
@@ -39,7 +45,7 @@ const Examples = () => {
                 <h3 className="text-xl font-semibold mb-4">{example.title}</h3>
                 <p className="text-gray-600 mb-4">{example.description}</p>
                 <div className="flex flex-wrap gap-2">
-                  {example.tags.map((tag, tagIndex) => (
+                  {example.tags && example.tags.map((tag, tagIndex) => (
                     <span key={tagIndex} className="bg-[#9b87f5]/10 text-[#9b87f5] px-3 py-1 rounded-full text-sm">
                       {tag}
                     </span>
