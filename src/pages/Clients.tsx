@@ -5,19 +5,9 @@ import Footer from "../components/Footer";
 const Clients = () => {
   const clients = [
     {
-      name: "TechCorp Global",
-      logo: "TC",
-      testimonial: "The AI chatbot solution has revolutionized our customer service approach. We've seen a dramatic reduction in response times and increased satisfaction."
-    },
-    {
-      name: "Finance Partners",
-      logo: "FP",
-      testimonial: "Their predictive analytics platform has given us insights we never thought possible. The ROI has exceeded our expectations by 200%."
-    },
-    {
-      name: "LegalEase Solutions",
-      logo: "LE",
-      testimonial: "The document processing AI has transformed our workflow. What used to take days now happens in minutes with even better accuracy."
+      name: "None yet!",
+      logo: "N/A",
+      testimonial: "We don't have any clients yet, but we will soon!"
     }
   ];
 
