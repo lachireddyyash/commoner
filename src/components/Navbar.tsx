@@ -6,10 +6,11 @@ const Navbar = () => {
     <nav className="fixed w-full z-50 px-6 py-4 bg-white/80 backdrop-blur-lg">
       <div className="max-w-[1200px] mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#9b87f5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-          <span className="font-medium text-[#1A1F2C]">CommonMan.ai</span>
+          <img 
+            src="/lovable-uploads/7c996667-ffcd-4786-ba6c-60fb0e266a5e.png" 
+            alt="CommonMan.ai Logo" 
+            className="h-8"
+          />
         </Link>
         
         <div className="hidden md:flex items-center gap-8">

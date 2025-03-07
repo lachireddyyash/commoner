@@ -5,13 +5,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              <span className="font-medium">Antimetal</span>
+              <img 
+                src="/lovable-uploads/7c996667-ffcd-4786-ba6c-60fb0e266a5e.png" 
+                alt="CommonMan.ai Logo" 
+                className="h-8"
+              />
             </div>
             <p className="text-accent text-sm">
-              Save time and money on AWS. Automated cloud cost optimization platform.
+              Practical AI solutions for businesses. Make AI work for you.
             </p>
           </div>
           
@@ -48,7 +49,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 mt-16 pt-8 text-accent text-sm">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>© 2024 Antimetal. All rights reserved.</p>
+            <p>© 2024 CommonMan.ai. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
