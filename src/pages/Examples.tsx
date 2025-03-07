@@ -7,22 +7,16 @@ import { Button } from "@/components/ui/button";
 const Examples = () => {
   const examples = [
     {
-      title: "Predictive Maintenance System",
-      description: "AI-powered system that predicts equipment failures before they occur, reducing downtime by 75%.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-      tags: ["Machine Learning", "IoT", "Predictive Analytics"]
+      title: "Chatbots",
+      description: "AI-powered systems that answer questions about your busines so you don't have to.",
     },
     {
       title: "Customer Sentiment Analysis",
       description: "Natural Language Processing solution that analyzes customer feedback across multiple channels.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-      tags: ["NLP", "Analytics", "Customer Insights"]
     },
     {
-      title: "Automated Document Processing",
+      title: "Document Processing",
       description: "AI system that extracts and processes information from documents with 99% accuracy.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
-      tags: ["OCR", "Machine Learning", "Automation"]
     }
   ];
 
