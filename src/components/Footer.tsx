@@ -1,3 +1,4 @@
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-white mt-24 py-16">
@@ -8,7 +9,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/7c996667-ffcd-4786-ba6c-60fb0e266a5e.png" 
                 alt="CommonMan.ai Logo" 
-                className="h-20"
+                className="h-40" // Restored to original h-40 size
               />
             </div>
             <p className="text-accent text-sm">
