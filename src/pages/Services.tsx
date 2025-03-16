@@ -13,7 +13,7 @@ const Services = () => {
     {
       icon: <Database className="w-12 h-12 text-[#9b87f5]" />,
       title: "Logo Creation",
-      description: "Our AI-driven design tools craft unique, high-quality logos that represent your brand’s identity professionally and effectively."
+      description: "Our AI-driven design tools craft unique, high-quality logos that represent your brand's identity professionally and effectively."
     },
     {
       icon: <Bot className="w-12 h-12 text-[#9b87f5]" />,
@@ -32,8 +32,8 @@ const Services = () => {
     },
     {
       icon: <Server className="w-12 h-12 text-[#9b87f5]" />,
-      title: "AI Infrastructure",
-      description: "Build and maintain robust AI infrastructure for your organization."
+      title: "Custom AI Solutions",
+      description: "Tailored AI solutions designed specifically for your business challenges and objectives."
     }
   ];
 
