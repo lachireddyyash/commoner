@@ -8,7 +8,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2">
           <img 
             src="/lovable-uploads/98e08063-8738-4ff2-8b90-28ff369c8028.png" 
-            alt="CommonMan.ai Logo" 
+            alt="Commoner.ai Logo" 
             className="h-12" 
           />
         </Link>

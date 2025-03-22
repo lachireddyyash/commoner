@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="flex items-center gap-2 mb-6">
               <img 
                 src="/lovable-uploads/98e08063-8738-4ff2-8b90-28ff369c8028.png" 
-                alt="CommonMan.ai Logo" 
+                alt="Commoner.ai Logo" 
                 className="h-10" 
               />
             </div>
@@ -50,7 +50,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 mt-16 pt-8 text-accent text-sm">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>© 2024 CommonMan.ai. All rights reserved.</p>
+            <p>© 2024 Commoner.ai. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
