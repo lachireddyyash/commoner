@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 const Clients = () => {
   const clients = [
     {
-      name: "None yet!",
+      name: "Coming soon!",
       logo: "N/A",
       testimonial: "We don't have any clients yet, but we will soon!"
     }

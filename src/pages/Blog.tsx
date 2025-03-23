@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 const Blog = () => {
   const posts = [
     {
-      title: "Coming Soon",
+      title: "Coming Soon!",
       excerpt: "We're working on our blog!",
       date: "2024-03-10",
       image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
