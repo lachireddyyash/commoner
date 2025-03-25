@@ -9,7 +9,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center justify-center pt-24 bg-gradient-to-b from-[#F8FAFF] to-white">
+      <div className="relative min-h-screen flex items-center justify-center pt-48 bg-gradient-to-b from-[#F8FAFF] to-white">
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at center, #9b87f5 2px, transparent 2px)`,
           backgroundSize: '48px 48px',
