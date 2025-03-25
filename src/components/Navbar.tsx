@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="max-w-[1200px] mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
           <img 
-            src="/lovable-uploads/98e08063-8738-4ff2-8b90-28ff369c8028.png" 
+            src="/lovable-uploads/c4b6fbf2-c772-4f12-bac3-abc9e3b270f5.png" 
             alt="Commoner.ai Logo" 
             className="h-12" 
           />
