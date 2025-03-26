@@ -40,7 +40,7 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#F8FAFF] to-white">
       <Navbar />
-      <div className="max-w-7xl mx-auto px-6 py-24">
+      <div className="max-w-7xl mx-auto px-6 pt-32 pb-24"> {/* Changed pt-24 to pt-32 to prevent navbar overlap */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4 text-[#1A1F2C]">Our Services</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
