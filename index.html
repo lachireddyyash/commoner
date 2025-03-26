@@ -10,6 +10,7 @@
   <meta name="author" content="Commoner.ai" />
   <meta property="og:image" content="/og-image.svg" />
   <link rel="canonical" href="https://commoner.ai" />
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
   <!-- Start Single Page Apps for GitHub Pages -->
   <script type="text/javascript">
     // Single Page Apps for GitHub Pages
@@ -32,7 +33,32 @@
 <body>
   <div id="root"></div>
   <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
   <script type="module" src="/src/main.tsx"></script>
+  
+  <df-messenger
+    project-id="inbound-byway-453918-d0"
+    agent-id="2c955532-ace4-43ac-9b84-53ac7e62f174"
+    language-code="en"
+    max-query-length="-1">
+    <df-messenger-chat-bubble
+      chat-title="CommonerAIbotexample">
+    </df-messenger-chat-bubble>
+  </df-messenger>
+  
+  <style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 16px;
+      right: 16px;
+    }
+  </style>
 </body>
 
 </html>
