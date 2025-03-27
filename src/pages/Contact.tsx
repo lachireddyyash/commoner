@@ -16,20 +16,34 @@ const Contact = () => {
     subject: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
     try {
-      const response = await fetch("https://formspree.io/f/hello@commoner.ai", {
+      // Using EmailJS service instead of formspree for reliable email delivery
+      const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          service_id: "service_pkcpmga",
+          template_id: "template_b5xl6er",
+          user_id: "bOg_sIAn4RKxGI7pY",
+          template_params: {
+            from_name: formData.name,
+            from_email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            to_email: "hello@commoner.ai"
+          }
+        }),
       });
 
-      if (response.ok) {
+      if (response.ok || response.status === 200) {
         toast({
           title: "Message sent successfully!",
           description: "We'll get back to you soon.",
@@ -46,6 +60,9 @@ const Contact = () => {
         variant: "destructive",
         duration: 5000,
       });
+      console.error("Contact form error:", error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -109,8 +126,12 @@ const Contact = () => {
                   required
                 />
               </div>
-              <Button type="submit" className="w-full bg-[#9b87f5] text-white hover:bg-[#7E69AB]">
-                Send Message
+              <Button 
+                type="submit" 
+                className="w-full bg-[#9b87f5] text-white hover:bg-[#7E69AB]"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </div>

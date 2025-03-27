@@ -19,7 +19,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/c4b6fbf2-c772-4f12-bac3-abc9e3b270f5.png" 
             alt="Commoner.ai Logo" 
-            className="h-16" // Reduced from h-32 to h-16
+            className="h-24" // Increased from h-16 to h-24
           />
         </Link>
         
