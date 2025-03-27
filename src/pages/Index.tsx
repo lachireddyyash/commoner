@@ -1,6 +1,6 @@
 
 import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
+import Footer from "../components/Footer";
 import { ArrowRight, Bot, Brain, Code, Database, LineChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -18,14 +18,14 @@ const Index = () => {
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-6 text-center">
           <div className="animate-fade-in">
-            <h1 className="text-[80px] leading-[1] font-medium tracking-[-0.02em] text-[#1A1F2C] mb-8">
-              Transforming Business<br />Through AI
+            <h1 className="text-[clamp(2.5rem,8vw,5rem)] leading-[1] font-medium tracking-[-0.02em] text-[#1A1F2C] mb-8">
+              Transforming Business<br className="hidden sm:block" />Through AI
             </h1>
             
             <div className="max-w-[600px] mx-auto mb-12">
-              <p className="text-xl text-[#1A1F2C]/80">
+              <p className="text-[clamp(1rem,4vw,1.25rem)] text-[#1A1F2C]/80">
                 Custom AI solutions that drive innovation and growth.
-                <br />
+                <br className="hidden sm:block" />
                 Turn your data into actionable insights.
               </p>
             </div>
@@ -38,7 +38,7 @@ const Index = () => {
               <ArrowRight className="w-5 h-5" />
             </Button>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-20">
               <div className="glass p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
                 <Brain className="w-8 h-8 mx-auto mb-4 text-[#9b87f5]" />
                 <h3 className="font-medium mb-2">Custom Chatbots</h3>
@@ -58,6 +58,7 @@ const Index = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
