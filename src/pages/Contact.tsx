@@ -23,40 +23,34 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // Using EmailJS service instead of formspree for reliable email delivery
-      const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          service_id: "service_pkcpmga",
-          template_id: "template_b5xl6er",
-          user_id: "bOg_sIAn4RKxGI7pY",
-          template_params: {
-            from_name: formData.name,
-            from_email: formData.email,
-            subject: formData.subject,
-            message: formData.message,
-            to_email: "hello@commoner.ai"
-          }
-        }),
+      // Using standard email mailto link as a fallback since EmailJS isn't working
+      // Create email body
+      const body = `
+        Name: ${formData.name}
+        Email: ${formData.email}
+        Subject: ${formData.subject}
+        
+        Message:
+        ${formData.message}
+      `;
+      
+      // Create mailto link
+      const mailtoLink = `mailto:hello@commoner.ai?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(body)}`;
+      
+      // Open default mail client
+      window.open(mailtoLink);
+      
+      toast({
+        title: "Action needed",
+        description: "Your email app has been opened. Please send the email to complete your message.",
+        duration: 5000,
       });
-
-      if (response.ok || response.status === 200) {
-        toast({
-          title: "Message sent successfully!",
-          description: "We'll get back to you soon.",
-          duration: 5000,
-        });
-        setFormData({ name: "", email: "", subject: "", message: "" });
-      } else {
-        throw new Error("Failed to send message");
-      }
+      
+      setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       toast({
         title: "Error sending message",
-        description: "Please try again later.",
+        description: "Please try again later or email us directly at hello@commoner.ai",
         variant: "destructive",
         duration: 5000,
       });
