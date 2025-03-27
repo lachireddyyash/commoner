@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, MessageSquare, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
     
     try {
-      const response = await fetch("https://formspree.io/f/lachireddy.yash@gmail.com", {
+      const response = await fetch("https://formspree.io/f/hello@commoner.ai", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -121,7 +121,7 @@ const Contact = () => {
                 <Mail className="w-6 h-6 text-[#9b87f5]" />
                 <h3 className="text-xl font-semibold">Email Us</h3>
               </div>
-              <p className="text-gray-600">lachireddy.yash@gmail.com</p>
+              <p className="text-gray-600">hello@commoner.ai</p>
             </div>
 
             <div className="glass p-8 rounded-xl">
@@ -129,15 +129,7 @@ const Contact = () => {
                 <Phone className="w-6 h-6 text-[#9b87f5]" />
                 <h3 className="text-xl font-semibold">Call Us</h3>
               </div>
-              <p className="text-gray-600">+1 (555) 123-4567</p>
-            </div>
-
-            <div className="glass p-8 rounded-xl">
-              <div className="flex items-center gap-4 mb-4">
-                <MessageSquare className="w-6 h-6 text-[#9b87f5]" />
-                <h3 className="text-xl font-semibold">Office Hours</h3>
-              </div>
-              <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+              <p className="text-gray-600">561 371 0601</p>
             </div>
           </div>
         </div>
