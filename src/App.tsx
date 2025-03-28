@@ -11,6 +11,7 @@ import Clients from "./pages/Clients";
 import Blog from "./pages/Blog";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
+import SNTGenWealth from "./pages/clients/SNTGenWealth";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/services" element={<Services />} />
           <Route path="/examples" element={<Examples />} />
           <Route path="/clients" element={<Clients />} />
+          <Route path="/clients/sntgenwealth" element={<SNTGenWealth />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
